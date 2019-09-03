@@ -8,10 +8,12 @@ import { ApolloProvider } from '@apollo/react-hooks';
 
 import BookList from './components/BookList'
 
+import AddBook from './components/AddBook'
+
 //apollo client setup
 
 const client = new ApolloClient ({
-    uri: 'http:localhost/4000/graphql'
+    uri: 'http://localhost:4000/graphql'
 });
 
 class App extends Component {
@@ -22,6 +24,7 @@ class App extends Component {
           <h1>Books I have read</h1>
 
           <BookList />
+          <AddBook />
 
 
       </div>
